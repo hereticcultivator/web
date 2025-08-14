@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heretic Cultivator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .main-text {
+            font-size: clamp(3rem, 15vw, 20rem);
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            letter-spacing: 0.1em;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .main-text {
+                font-size: clamp(2rem, 12vw, 8rem);
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-text">
+        欢迎道友
+    </div>
+</body>
+</html>
